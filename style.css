@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: slateblue;
+    --secondary-color: lavender;
+    --background-gradient: linear-gradient(135deg, #E6E6FA, #D8BFD8);
+    --text-color: #333;
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    animation: fadeIn 3s ease-in-out;
+    cursor: none;
+}
+
+.cursor {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary-color);
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    z-index: 1000;
+    transition: transform 0.05s linear;
+}
+
+.navbar {
+    transition: all 0.6s ease-in-out;
+    animation: slideDown 2s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.5s ease-in-out, transform 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: lavender !important;
+    transform: scale(1.1);
+    animation: glow 2s infinite alternate;
+}
+
+#home {
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.container1 h1 {
+    font-size: 45px;
+    display: inline-block;
+    border-right: 3px solid lavender;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards, blink 1s infinite;
+    position: relative;
+}
+
+#about {
+    padding: 80px 10%;
+    text-align: center;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+#about h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: slateblue;
+    animation: glowText 2s infinite alternate ease-in-out;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+    animation: slideUp 2s ease-in-out;
+}
+
+#projects {
+    padding: 80px 10%;
+    text-align: center;
+    color: white;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+.project-card {
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: fadeInUp 2.5s ease-in-out;
+    margin: 0px 0px 8px;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s ease-in-out;
+}
+
+#contact {
+    padding: 80px 10%;
+    text-align: center;
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#contact ul li:hover {
+    transform: scale(1.1);
+    background-color: rgba(230, 230, 250, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    animation: highlight 1s ease-in-out;
+}
+
+#contact ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+#contact ul li a:hover {
+    color: lavender;
+}
+
+footer {
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    text-shadow: 0 0 5px lavender, 0 0 10px slateblue;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px lavender, 0 0 10px slateblue; }
+    to { text-shadow: 0 0 15px lavender, 0 0 25px slateblue; }
+}
+
+@keyframes glowText {
+    0% { text-shadow: 0 0 5px slateblue, 0 0 10px lavender; }
+    100% { text-shadow: 0 0 15px slateblue, 0 0 25px lavender; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes highlight {
+    0% { background-color: rgba(230, 230, 250, 0.1); }
+    100% { background-color: rgba(230, 230, 250, 0.5); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container1 h1 {
+        font-size: 30px;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    #about h1 {
+        font-size: 28px;
+    }
+
+    #about p, #contact ul li a {
+        font-size: 16px;
+    }
+
+    #contact ul li {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container1 h1 {
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    #about h1 {
+        font-size: 24px;
+    }
+
+    #about p, #contact ul li a {
+        font-size: 14px;
+    }
+}
