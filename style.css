@@ -3,7 +3,6 @@
 :root {
     --primary-color: slateblue;
     --secondary-color: lavender;
-    --background-gradient: linear-gradient(135deg, #E6E6FA, #D8BFD8);
     --text-color: #333;
     --font-family: 'Poppins', sans-serif;
 }
@@ -16,11 +15,11 @@
 
 body {
     font-family: var(--font-family);
-    background: var(--background-gradient);
+    background: linear-gradient(135deg, #E6E6FA, #D8BFD8);
     color: var(--text-color);
     scroll-behavior: smooth;
-    animation: fadeIn 3s ease-in-out;
     cursor: none;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .cursor {
@@ -32,8 +31,8 @@ body {
     pointer-events: none;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
-    z-index: 1000;
-    transition: transform 0.05s linear;
+    z-index: 9999;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .navbar {
@@ -67,35 +66,11 @@ body {
     padding: 0 20px;
 }
 
-.container1 h1 {
-    font-size: 45px;
-    display: inline-block;
-    border-right: 3px solid lavender;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 4s steps(30, end) forwards, blink 1s infinite;
-    position: relative;
-}
-
-#about {
+#about,
+#skills {
     padding: 80px 10%;
     text-align: center;
     animation: fadeInUp 2.5s ease-in-out;
-}
-
-#about h1 {
-    font-size: 35px;
-    font-weight: bold;
-    color: slateblue;
-    animation: glowText 2s infinite alternate ease-in-out;
-}
-
-#about p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
-    animation: slideUp 2s ease-in-out;
 }
 
 #projects {
@@ -107,21 +82,31 @@ body {
 
 .project-card {
     border-radius: 10px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    animation: fadeInUp 2.5s ease-in-out;
-    margin: 0px 0px 8px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    margin: 8px 0;
 }
 
 .project-card:hover {
     transform: scale(1.1);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     animation: bounce 1s ease-in-out;
 }
 
-#contact {
-    padding: 80px 10%;
-    text-align: center;
-    animation: fadeInUp 2.5s ease-in-out;
+.skill-badge {
+    display: inline-block;
+    background-color: slateblue;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-badge:hover {
+    transform: scale(1.1);
+    background-color: lavender;
+    color: slateblue;
 }
 
 #contact ul {
@@ -132,7 +117,7 @@ body {
 #contact ul li {
     display: inline-block;
     margin: 10px 15px;
-    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    transition: transform 0.5s, background-color 0.5s;
 }
 
 #contact ul li:hover {
@@ -147,7 +132,7 @@ body {
     color: white;
     font-size: 18px;
     text-decoration: none;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.5s;
 }
 
 #contact ul li a:hover {
@@ -162,87 +147,130 @@ footer {
     text-shadow: 0 0 5px lavender, 0 0 10px slateblue;
 }
 
+/* Animations */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
 
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes glow {
-    from { text-shadow: 0 0 5px lavender, 0 0 10px slateblue; }
-    to { text-shadow: 0 0 15px lavender, 0 0 25px slateblue; }
-}
+    from {
+        text-shadow: 0 0 5px lavender, 0 0 10px slateblue;
+    }
 
-@keyframes glowText {
-    0% { text-shadow: 0 0 5px slateblue, 0 0 10px lavender; }
-    100% { text-shadow: 0 0 15px slateblue, 0 0 25px lavender; }
+    to {
+        text-shadow: 0 0 15px lavender, 0 0 25px slateblue;
+    }
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes highlight {
-    0% { background-color: rgba(230, 230, 250, 0.1); }
-    100% { background-color: rgba(230, 230, 250, 0.5); }
+    0% {
+        background-color: rgba(230, 230, 250, 0.1);
+    }
+
+    100% {
+        background-color: rgba(230, 230, 250, 0.5);
+    }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container1 h1 {
-        font-size: 30px;
-    }
-    
+/* Responsive */
+@media(max-width:768px) {
     .navbar-brand {
         font-size: 20px;
-    }
-
-    #about h1 {
-        font-size: 28px;
-    }
-
-    #about p, #contact ul li a {
-        font-size: 16px;
-    }
-
-    #contact ul li {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container1 h1 {
-        font-size: 24px;
     }
 
     .navbar-nav .nav-link {
         font-size: 16px;
     }
+}
 
-    #about h1 {
-        font-size: 24px;
-    }
-
-    #about p, #contact ul li a {
+@media(max-width:480px) {
+    .navbar-nav .nav-link {
         font-size: 14px;
     }
+}
+
+.cursor, .cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 9999;
+}
+
+/* Main cursor: small and solid */
+.cursor {
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary-color);
+  mix-blend-mode: difference;
+}
+
+/* Follower: bigger, semi-transparent, smooth trailing */
+.cursor-follower {
+  width: 30px;
+  height: 30px;
+  border: 2px solid slateblue;
+  background-color: rgba(106, 90, 205, 0.1);
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+/* Hover effect */
+.cursor.hovered {
+  transform: scale(2);
+  background-color: lavender;
+}
+
+.cursor-follower.hovered {
+  transform: scale(1.5);
+  background-color: rgba(106, 90, 205, 0.2);
+  border-color: lavender;
+}
+@media (max-width: 768px) {
+  .cursor { width: 10px; height: 10px; }
+  .cursor-follower { width: 20px; height: 20px; }
 }
