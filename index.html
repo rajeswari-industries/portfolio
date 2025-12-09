@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="S.Sai Dhanush - B.Tech CSE Student & Full Stack Web Developer">
-    <title>Portfolio - S.Sai Dhanush</title>
+    <title>S.Sai Dhanush - B.Tech CSE Portfolio</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(15, 13, 33, 0.95); backdrop-filter: blur(10px);">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home"><i class="fas fa-code"></i> Dhanush</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold text-gold" href="#home"><i class="fas fa-code me-2"></i>Dhanush</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -36,197 +39,143 @@
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="d-flex align-items-center text-white py-5 mt-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span style="color: #ffd700;">Dhanush</span></h1>
-                    <h2 class="h4 fw-light mb-4">B.Tech CSE Student & Full Stack Developer</h2>
-                    <p class="lead mb-4">Building responsive, interactive web applications with modern technologies. Passionate about clean code and user experience.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#projects" class="btn btn-warning btn-lg fw-bold">View My Work</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg fw-bold">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center" data-aos="fade-left">
-                    <img src="dhanush.jpg" alt="Dhanush" class="img-fluid rounded-circle shadow-lg border border-5" style="max-width: 280px; border-color: #ffd700;">
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="home" class="d-flex align-items-center text-white min-vh-100">
+        <div class="container text-center">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="fw-bold display-3 text-gold">Hi, I am S.Sai Dhanush</h1>
+                    <h2 class="fw-light h4 text-teal">B.Tech CSE Student & Web Developer</h2>
+                    <p class="lead mt-3 text-silver">I build responsive, interactive websites and continuously learn
+                        modern web technologies with a focus on DSA and clean architecture.</p>
 
-    <!-- About Section -->
-    <section id="about" class="py-5" style="background-color: #f8f9fa;">
-        <div class="container" data-aos="fade-up">
-            <h2 class="h1 fw-bold text-center mb-5" style="color: #667eea;">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="lead mb-3">I'm a B.Tech CSE student with a passion for creating beautiful and functional web applications. My journey in web development started with curiosity and has evolved into a professional skillset.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Full Stack Web Development</li>
-                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Problem Solving & DSA</li>
-                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Responsive Design</li>
-                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Database Management</li>
-                    </ul>
+                    <a href="#projects" class="btn btn-lg mt-3 fw-bold btn-accent">
+                        View My Work <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
                 <div class="col-md-6 text-center">
-                    <div class="p-4 bg-white rounded shadow">
-                        <h4 class="fw-bold" style="color: #667eea;">Quick Stats</h4>
-                        <p><span class="h3 fw-bold" style="color: #667eea;">4+</span> Projects Completed</p>
-                        <p><span class="h3 fw-bold" style="color: #667eea;">10+</span> Technologies</p>
-                        <p><span class="h3 fw-bold" style="color: #667eea;">100%</span> Dedication</p>
-                    </div>
+                    <img src="dhanush.jpg" alt="Dhanush" class="img-fluid rounded-circle shadow-lg profile-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <section id="about" class="py-5 text-center">
         <div class="container">
-            <h2 class="h1 fw-bold text-center text-white mb-5" data-aos="fade-up">Featured Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden transition-all">
-                        <div class="p-4">
-                            <i class="fas fa-globe h3" style="color: #667eea;"></i>
-                            <h3 class="fw-bold mt-3">Rajeswari Industries</h3>
-                            <p class="text-muted">Fully responsive corporate website showcasing products and services with modern design.</p>
-                            <div class="d-flex gap-2">
-                                <span class="badge bg-info">HTML</span>
-                                <span class="badge bg-info">CSS</span>
-                                <span class="badge bg-info">Bootstrap</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="p-4">
-                            <i class="fas fa-cloud-sun h3" style="color: #667eea;"></i>
-                            <h3 class="fw-bold mt-3">Weather App</h3>
-                            <p class="text-muted">Real-time weather forecasting using OpenWeatherMap API with intuitive UI.</p>
-                            <div class="d-flex gap-2">
-                                <span class="badge bg-success">JavaScript</span>
-                                <span class="badge bg-success">API</span>
-                                <span class="badge bg-success">Bootstrap</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="p-4">
-                            <i class="fas fa-database h3" style="color: #667eea;"></i>
-                            <h3 class="fw-bold mt-3">CRUD Application</h3>
-                            <p class="text-muted">Full-featured record management system with create, read, update, delete operations.</p>
-                            <div class="d-flex gap-2">
-                                <span class="badge bg-warning">MySQL</span>
-                                <span class="badge bg-warning">JavaScript</span>
-                                <span class="badge bg-warning">Backend</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div class="p-4">
-                            <i class="fas fa-users h3" style="color: #667eea;"></i>
-                            <h3 class="fw-bold mt-3">Employee Management</h3>
-                            <p class="text-muted">Full-stack application for managing employee data with search and filtering.</p>
-                            <div class="d-flex gap-2">
-                                <span class="badge bg-danger">React</span>
-                                <span class="badge bg-danger">Node.js</span>
-                                <span class="badge bg-danger">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h1 class="fw-bold display-4 mb-4 text-gold">About Me</h1>
+            <p class="lead mx-auto text-silver" style="max-width: 800px;">
+                I am an aspiring <b>Full Stack Web Developer</b> currently leveraging my foundational knowledge from a
+                Diploma into my <b>2nd Year of B.Tech (CSE)</b>. My core focus is building <b>efficient, scalable, and
+                    responsive web applications</b>. I am passionate about applying <b>clean architectural
+                    principles</b> and
+                honing my skills in <b>modern web technologies</b> to deliver high-quality, practical full-stack
+                solutions.
+            </p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-5" style="background-color: #f8f9fa;">
+    <section id="projects" class="py-5 text-white">
+        <div class="container text-center">
+            <h1 class="fw-bold display-4 mb-5 text-teal">Projects Showcase</h1>
+            <div class="row justify-content-center g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card p-4 rounded shadow-lg">
+                        <i class="fas fa-tasks h2 mb-3 text-teal"></i>
+                        <h2 class="text-gold">CRUD Task Application</h2>
+                        <p class="small text-silver">Web-based application for managing records, demonstrating
+                            full-stack data flow and database operations.</p>
+                        <span class="tech-badge-project">HTML/CSS/JS</span>
+                        <span class="tech-badge-project">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card p-4 rounded shadow-lg">
+                        <i class="fas fa-cloud-sun h2 mb-3 text-teal"></i>
+                        <h2 class="text-gold">Real-time Weather App</h2>
+                        <p class="small text-silver">Dynamic web app fetching and displaying current weather data using
+                            a third-party API (OpenWeatherMap).</p>
+                        <span class="tech-badge-project">JavaScript</span>
+                        <span class="tech-badge-project">API Integration</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="project-card p-4 rounded shadow-lg">
+                        <i class="fas fa-building h2 mb-3 text-teal"></i>
+                        <h2 class="text-gold">Rajeswari Industries Website</h2>
+                        <p class="small text-silver">A fully responsive corporate website showcasing products and
+                            services with a professional, clean UI/UX.</p>
+                        <span class="tech-badge-project">HTML5</span>
+                        <span class="tech-badge-project">Bootstrap</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mt-4">
+                    <div class="project-card p-4 rounded shadow-lg">
+                        <i class="fas fa-users h2 mb-3 text-teal"></i>
+                        <h2 class="text-gold">Employee Management System</h2>
+                        <p class="small text-silver">A system built to manage employee records (add, edit, delete,
+                            search) using front-end logic and database connection.</p>
+                        <span class="tech-badge-project">Node.js/Backend</span>
+                        <span class="tech-badge-project">MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/YourGitHubUsername" target="_blank"
+                class="btn btn-lg mt-5 fw-bold btn-outline-accent">
+                View All on GitHub <i class="fab fa-github ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5 text-center">
         <div class="container">
-            <h2 class="h1 fw-bold text-center mb-5" style="color: #667eea;" data-aos="fade-up">Skills & Technologies</h2>
-            <div class="row">
-                <div class="col-md-6" data-aos="fade-right">
-                    <h4 class="fw-bold mb-3" style="color: #667eea;">Languages</h4>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">C++</span>
-                        <span class="skill-badge">C</span>
-                        <span class="skill-badge">JavaScript</span>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h4 class="fw-bold mb-3" style="color: #667eea;">Frontend</h4>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="skill-badge">HTML</span>
-                        <span class="skill-badge">CSS</span>
-                        <span class="skill-badge">Bootstrap</span>
-                        <span class="skill-badge">React.js</span>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-                    <h4 class="fw-bold mb-3" style="color: #667eea;">Backend</h4>
-                    <div class="d-flex flex-wrap gap-2 mb-4">
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">MongoDB</span>
-                        <span class="skill-badge">REST API</span>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
-                    <h4 class="fw-bold mb-3" style="color: #667eea;">Tools</h4>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="skill-badge">Git</span>
-                        <span class="skill-badge">VS Code</span>
-                        <span class="skill-badge">Figma</span>
-                        <span class="skill-badge">DevTools</span>
-                    </div>
-                </div>
+            <h1 class="fw-bold display-4 mb-4 text-gold">Core Skills</h1>
+            <p class="lead mb-4 text-silver">Technologies and core CSE principles I have mastered or am currently
+                mastering:</p>
+
+            <div class="d-flex justify-content-center flex-wrap gap-2">
+                <span class="skill-badge"><i class="fas fa-laptop-code me-2"></i>Python</span>
+                <span class="skill-badge"><i class="fas fa-laptop-code me-2"></i>C++</span>
+                <span class="skill-badge"><i class="fas fa-brain me-2"></i>DSA Fundamentals</span>
+                <span class="skill-badge"><i class="fas fa-database me-2"></i>DBMS/MySQL</span>
+
+                <span class="skill-badge"><i class="fab fa-html5 me-2"></i>HTML & CSS</span>
+                <span class="skill-badge"><i class="fab fa-js-square me-2"></i>JavaScript</span>
+                <span class="skill-badge"><i class="fab fa-bootstrap me-2"></i>Bootstrap</span>
+                <span class="skill-badge"><i class="fab fa-react me-2"></i>React.js (Basics)</span>
+                <span class="skill-badge"><i class="fab fa-node-js me-2"></i>Node.js</span>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-        <div class="container" data-aos="fade-up">
-            <h2 class="h1 fw-bold text-center mb-5">Let's Connect</h2>
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-8 text-center">
-                    <p class="lead mb-4">I'm always interested in hearing about new projects and opportunities.</p>
-                    <a href="mailto:saidhanushhacker@gmail.com" class="btn btn-warning btn-lg fw-bold">Send Me an Email</a>
-                </div>
-            </div>
-           <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/_urs_truely_dhanush_/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/s.sai.dhanush" target="_blank" class="btn btn-outline-light btn-lg rounded-circle"><i class="fab fa-facebook"></i></a>
-                        <a href="tel:+918978063452" class="btn btn-outline-light btn-lg rounded-circle"><i class="fas fa-phone"></i></a>
-                    </div>
-                </div>
-            </div>
+    <section id="contact" class="py-5 text-white text-center">
+        <div class="container">
+            <h1 class="fw-bold display-4 mb-4 text-teal">Get In Touch</h1>
+            <p class="lead mb-5 text-silver">Let's connect and discuss future opportunities or collaborations!</p>
+
+            <ul class="list-unstyled d-flex justify-content-center flex-wrap gap-4">
+
+                <li style="animation-delay: 0.1s;"><a href="https://www.linkedin.com/in/samatham-sai-dhanush-84119b33b/"
+                        target="_blank" class="text-silver"><i class="fab fa-linkedin fa-2x"></i><br>LinkedIn</a></li>
+                <li style="animation-delay: 0.2s;"><a href="https://github.com/YourGitHubUsername" target="_blank"
+                        class="text-silver"><i class="fab fa-github fa-2x"></i><br>GitHub</a></li>
+                <li style="animation-delay: 0.3s;"><a href="mailto:saidhanushhacker@gmail.com" class="text-silver"><i
+                            class="fas fa-envelope fa-2x"></i><br>Email</a></li>
+                <li style="animation-delay: 0.4s;"><a href="tel:+918978063452" class="text-silver"><i
+                            class="fas fa-phone fa-2x"></i><br>Mobile</a></li>
+            </ul>
         </div>
     </section>
 
-    <footer class="text-center py-4 text-white" style="background-color: rgba(15, 13, 33, 0.95);">
-        <p class="mb-0">&copy; 2025 S.Sai Dhanush. All Rights Reserved.</p>
+    <footer class="text-center py-3 text-silver">
+        <p class="mb-0">&copy; S.Sai Dhanush | All Rights Reserved 2025</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
     <script src="script.js"></script>
 </body>
 
 </html>
-
