@@ -2,154 +2,228 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - S.Sai Dhanush</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.Sai Dhanush - B.Tech CSE Student & Full Stack Web Developer">
+    <title>Portfolio - S.Sai Dhanush</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark"
-    style="background-color: slateblue; position: fixed; width: 100%; top: 0; z-index: 1000;">
-    <div class="container">
-      <a class="navbar-brand" href="#">Dhanush</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Home Section -->
-  <section id="home" class="d-flex align-items-center text-white py-5"
-    style="background: linear-gradient(120deg, #6a5acd, #483d8b);">
-    <div class="container text-center">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <h1 class="fw-bold">Hi, I am S.Sai Dhanush</h1>
-          <h2 class="fw-light">B.Tech CSE Student & Web Developer</h2>
-          <p class="lead">I build responsive, interactive websites and continuously learn modern web technologies.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(15, 13, 33, 0.95); backdrop-filter: blur(10px);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><i class="fas fa-code"></i> Dhanush</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="dhanush.jpg" alt="Dhanush" class="img-fluid rounded-circle shadow-lg" style="max-width: 250px;">
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="d-flex align-items-center text-white py-5 mt-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span style="color: #ffd700;">Dhanush</span></h1>
+                    <h2 class="h4 fw-light mb-4">B.Tech CSE Student & Full Stack Developer</h2>
+                    <p class="lead mb-4">Building responsive, interactive web applications with modern technologies. Passionate about clean code and user experience.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-warning btn-lg fw-bold">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg fw-bold">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left">
+                    <img src="dhanush.jpg" alt="Dhanush" class="img-fluid rounded-circle shadow-lg border border-5" style="max-width: 280px; border-color: #ffd700;">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5 text-center" style="background-color: #e6e6fa; color: #6a5acd;">
-    <div class="container">
-      <h1 class="fw-bold">About Me</h1>
-      <p class="lead">I am a B.Tech CSE student passionate about web development and programming. I enjoy creating web
-        applications, solving problems, and enhancing my coding skills every day.</p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 text-white" style="background: linear-gradient(120deg, #6a5acd, #e6e6fa);">
-    <div class="container text-center">
-      <h1 class="fw-bold">Projects</h1>
-      <div class="row">
-        <!-- Diploma Projects -->
-        <div class="col-md-4">
-          <div class="project-card p-4 bg-white text-dark rounded shadow-lg">
-            <h2>Rajeswari Industries Website</h2>
-            <p>This is a fully responsive corporate website designed for Rajeswari Industries. It showcases the
-              company's products, services, and business portfolio in a clean and modern layout.</p>
-          </div>
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container" data-aos="fade-up">
+            <h2 class="h1 fw-bold text-center mb-5" style="color: #667eea;">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="lead mb-3">I'm a B.Tech CSE student with a passion for creating beautiful and functional web applications. My journey in web development started with curiosity and has evolved into a professional skillset.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Full Stack Web Development</li>
+                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Problem Solving & DSA</li>
+                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Responsive Design</li>
+                        <li class="mb-2"><i class="fas fa-check-circle" style="color: #667eea;"></i> Database Management</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="p-4 bg-white rounded shadow">
+                        <h4 class="fw-bold" style="color: #667eea;">Quick Stats</h4>
+                        <p><span class="h3 fw-bold" style="color: #667eea;">4+</span> Projects Completed</p>
+                        <p><span class="h3 fw-bold" style="color: #667eea;">10+</span> Technologies</p>
+                        <p><span class="h3 fw-bold" style="color: #667eea;">100%</span> Dedication</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="col-md-4">
-          <div class="project-card p-4 bg-white text-dark rounded shadow-lg">
-            <h2>Weather Forecasting Application</h2>
-            <p>Web app providing real-time weather updates using HTML, CSS, JavaScript, Bootstrap, and OpenWeatherMap
-              API.</p>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container">
+            <h2 class="h1 fw-bold text-center text-white mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden transition-all">
+                        <div class="p-4">
+                            <i class="fas fa-globe h3" style="color: #667eea;"></i>
+                            <h3 class="fw-bold mt-3">Rajeswari Industries</h3>
+                            <p class="text-muted">Fully responsive corporate website showcasing products and services with modern design.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-info">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-info">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-4">
+                            <i class="fas fa-cloud-sun h3" style="color: #667eea;"></i>
+                            <h3 class="fw-bold mt-3">Weather App</h3>
+                            <p class="text-muted">Real-time weather forecasting using OpenWeatherMap API with intuitive UI.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-success">API</span>
+                                <span class="badge bg-success">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-4">
+                            <i class="fas fa-database h3" style="color: #667eea;"></i>
+                            <h3 class="fw-bold mt-3">CRUD Application</h3>
+                            <p class="text-muted">Full-featured record management system with create, read, update, delete operations.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-warning">MySQL</span>
+                                <span class="badge bg-warning">JavaScript</span>
+                                <span class="badge bg-warning">Backend</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card h-100 bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="p-4">
+                            <i class="fas fa-users h3" style="color: #667eea;"></i>
+                            <h3 class="fw-bold mt-3">Employee Management</h3>
+                            <p class="text-muted">Full-stack application for managing employee data with search and filtering.</p>
+                            <div class="d-flex gap-2">
+                                <span class="badge bg-danger">React</span>
+                                <span class="badge bg-danger">Node.js</span>
+                                <span class="badge bg-danger">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <div class="project-card p-4 bg-white text-dark rounded shadow-lg">
-            <h2>CRUD Application</h2>
-            <p>Web-based CRUD (Create, Read, Update, Delete) application for managing records using HTML, CSS,
-              JavaScript, and MySQL.</p>
-          </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="h1 fw-bold text-center mb-5" style="color: #667eea;" data-aos="fade-up">Skills & Technologies</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h4 class="fw-bold mb-3" style="color: #667eea;">Languages</h4>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h4 class="fw-bold mb-3" style="color: #667eea;">Frontend</h4>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">React.js</span>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <h4 class="fw-bold mb-3" style="color: #667eea;">Backend</h4>
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">MySQL</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">REST API</span>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="100">
+                    <h4 class="fw-bold mb-3" style="color: #667eea;">Tools</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">DevTools</span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- B.Tech Projects (Add more as you finish) -->
-        <!-- Example -->
-        <!-- B.Tech Project: Employee Management System -->
-        <div class="col-md-4 mt-4">
-          <div class="project-card p-4 bg-white text-dark rounded shadow-lg">
-            <h2>Employee Management System</h2>
-            <p>A full-stack application to manage employee data including add, edit, delete, and search functionality
-              using HTML, CSS, JavaScript, and MySQL.</p>
-          </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="container" data-aos="fade-up">
+            <h2 class="h1 fw-bold text-center mb-5">Let's Connect</h2>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                    <p class="lead mb-4">I'm always interested in hearing about new projects and opportunities.</p>
+                    <a href="mailto:saidhanushhacker@gmail.com" class="btn btn-warning btn-lg fw-bold">Send Me an Email</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_urs_truely_dhanush_/" target="_blank" class="btn btn-outline-light btn-lg rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/s.sai.dhanush" target="_blank" class="btn btn-outline-light btn-lg rounded-circle me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="tel:+918978063452" class="btn btn-outline-light btn-lg rounded-circle"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
         </div>
+    </section>
 
-      </div>
-    </div>
-  </section>
+    <footer class="text-center py-4 text-white" style="background-color: rgba(15, 13, 33, 0.95);">
+        <p class="mb-0">&copy; 2025 S.Sai Dhanush. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 text-center" style="background-color: #e6e6fa; color: #6a5acd;">
-    <div class="container">
-      <h1 class="fw-bold">Skills</h1>
-      <p class="lead">Technologies and tools I work with:</p>
-      <div class="d-flex justify-content-center flex-wrap">
-        <span class="skill-badge">Python</span>
-        <span class="skill-badge">C++</span>
-        <span class="skill-badge">C</span>
-        <span class="skill-badge">MySQL</span>
-        <span class="skill-badge">HTML</span>
-        <span class="skill-badge">CSS</span>
-        <span class="skill-badge">JavaScript</span>
-        <span class="skill-badge">Bootstrap</span>
-        <span class="skill-badge">React.js</span>
-        <span class="skill-badge">Node.js</span>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 text-white text-center" style="background-color: darkslateblue;">
-    <div class="container">
-      <h1 class="fw-bold">Contact</h1>
-      <p>You can reach me through the following platforms:</p>
-      <ul class="list-unstyled">
-
-        <li><a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b/" target="_blank" class="text-white"><i
-              class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/_urs_truely_dhanush_/" target="_blank" class="text-white"><i
-              class="fab fa-instagram"></i> Instagram</a></li>
-        <li><a href="https://www.facebook.com/s.sai.dhanush" target="_blank" class="text-white"><i
-                      class="fab fa-facebook"></i> Facebook</a></li>
-        <li><a href="tel:+91 8978063452" class="text-white"><i class="fas fa-phone"></i> Mobile</a></li>
-        <li><a href="mailto:saidhanushhacker@gmail.com" class="text-white"><i class="fas fa-envelope"></i>
-            Email</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <footer class="text-center py-3 text-white" style="background: slateblue;">
-    <p>&copy; All Rights Reserved 2025</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
-
