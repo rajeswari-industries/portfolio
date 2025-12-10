@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;800&display=swap');
 
-/* ===== 0. Global Setup & Variables (Black, Teal, Gold, Silver) ===== */
 :root {
     --color-bg-black: #121212;
-    /* Deep Black Background */
+
     --color-bg-card: #1E1E1E;
-    /* Slightly Lighter Black/Dark Grey for Cards */
+
     --color-teal: #008080;
-    /* Primary Accent Color (Deep Teal) */
+
     --color-gold: #FFD700;
-    /* Secondary Accent (Subtle Gold) */
+
     --color-silver: #CCCCCC;
-    /* Light Text Color */
+
     --color-white: #FFFFFF;
 
     --font-family-header: 'Playfair Display', serif;
-    /* Elegant Header Font */
+
     --font-family-body: 'Montserrat', sans-serif;
 
     --shadow-teal-glow: 0 0 10px rgba(0, 128, 128, 0.7);
@@ -38,7 +37,6 @@ body {
     cursor: none;
 }
 
-/* Helper Text Classes */
 .text-teal {
     color: var(--color-teal) !important;
 }
@@ -51,8 +49,6 @@ body {
     color: var(--color-silver) !important;
 }
 
-/* ===== 1. Custom Cursor Styling (Adapted for new palette) ===== */
-/* Ensure the cursor colors avoid purple */
 .cursor,
 .cursor-follower {
     position: fixed;
@@ -91,7 +87,6 @@ body {
 }
 
 
-/* ===== 2. Navbar Styling ===== */
 .navbar {
     background-color: rgba(18, 18, 18, 0.95) !important;
     backdrop-filter: blur(5px);
@@ -114,14 +109,12 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Teal Hover/Active State */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
     color: var(--color-teal) !important;
     text-shadow: 0 0 5px rgba(0, 128, 128, 0.8);
 }
 
-/* Gold Underline Effect */
 .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
@@ -139,9 +132,6 @@ body {
     width: 60%;
 }
 
-/* ===== 3. Section & Component Styling (Animations added via CSS transitions) ===== */
-
-/* Home Section */
 #home {
     min-height: 100vh;
     padding-top: 120px;
@@ -160,21 +150,26 @@ body {
     font-weight: 600;
 }
 
+/* Profile Image Adjusted */
 .profile-img {
-    border: 5px solid var(--color-teal);
-    box-shadow: 0 0 20px rgba(0, 128, 128, 0.5);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 250px;
+    /* reduced size */
+    height: 250px;
+    /* maintain square/circle */
+    max-width: 80%;
+    /* responsive */
+    border: 4px solid var(--electric-blue);
+    box-shadow: 0 0 20px var(--electric-blue);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
 
 .profile-img:hover {
     transform: scale(1.05);
-    border-color: var(--color-gold);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+    border-color: var(--cyber-pink);
+    box-shadow: 0 0 25px var(--cyber-pink), 0 0 35px var(--neon-purple);
 }
 
-/* Buttons */
-/* Updated inline style for button in HTML to use this class: 
-   change the HOME button's inline style to class="btn btn-lg mt-3 fw-bold btn-accent" */
+
 .btn-accent {
     background-color: var(--color-teal);
     color: var(--color-white);
@@ -193,7 +188,6 @@ body {
     transform: translateY(-3px) scale(1.02);
 }
 
-/* Projects Section */
 #projects {
     background-color: var(--color-bg-black);
 }
@@ -245,10 +239,9 @@ body {
     color: var(--color-bg-black);
 }
 
-/* About & Skills (Light Sections) */
 #about,
 #skills {
-    /* Removed old style to use the dark theme for consistency and luxury feel */
+
     background-color: var(--color-bg-card);
     color: var(--color-silver);
 }
@@ -258,7 +251,6 @@ body {
     color: var(--color-gold);
 }
 
-/* Skills Badges */
 .skill-badge {
     display: inline-flex;
     align-items: center;
@@ -289,7 +281,6 @@ body {
     color: var(--color-bg-black);
 }
 
-/* Contact Section */
 #contact {
     background-color: #0A0A0A;
     border-top: 1px solid var(--color-gold);
@@ -322,14 +313,12 @@ body {
     color: var(--color-teal);
 }
 
-/* Footer */
 footer {
     background: var(--color-bg-black);
     color: var(--color-silver);
     border-top: 1px solid var(--color-teal);
 }
 
-/* Mobile adjustments */
 @media(max-width:768px) {
     .navbar-brand {
         font-size: 1.5rem;
@@ -352,11 +341,14 @@ footer {
         transform: none;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
 }
 
-/* ... (existing CSS code for Luxury Deco theme) ... */
-
-/* Buttons added to CSS for consistency */
 .btn-accent {
     background-color: var(--color-teal);
     color: var(--color-white);
