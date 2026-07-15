@@ -4,178 +4,689 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="S.Sai Dhanush - B.Tech CSE Student & Full Stack Web Developer">
-    <title>S.Sai Dhanush - B.Tech CSE Portfolio</title>
+    <meta name="description" content="S. Sai Dhanush - Full Stack Web Developer & B.Tech CSE Student Portfolio">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>S. Sai Dhanush | Portfolio</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+<body>
 
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand fw-bold text-gold" href="#home"><i class="fas fa-code me-2"></i>Dhanush</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-code"></i> Dhanush
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
+
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
 
-    <section id="home" class="d-flex align-items-center text-white min-vh-100">
-        <div class="container text-center">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h1 class="fw-bold display-3 text-gold">Hi, I am S.Sai Dhanush</h1>
-                    <h2 class="fw-light h4 text-teal">B.Tech CSE Student & Web Developer</h2>
-                    <p class="lead mt-3 text-silver">I build responsive, interactive websites and continuously learn
-                        modern web technologies with a focus on DSA and clean architecture.</p>
+    <!-- Hero Section -->
+    <section id="home">
 
-                    <a href="#projects" class="btn btn-lg mt-3 fw-bold btn-accent">
-                        View My Work <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-6 hero-content">
+
+                    <span class="welcome-text">
+                        👋 Welcome To My Portfolio
+                    </span>
+
+                    <h1>
+                        Hi, I'm
+                        <span class="gold-text">
+                            S. Sai Dhanush
+                        </span>
+                    </h1>
+
+                    <h3>
+                        <span id="typing-text"></span>
+                    </h3>
+
+                    <p>
+                        Passionate Full Stack Developer and
+                        B.Tech Computer Science Engineering student.
+                        I love building modern, responsive,
+                        and user-friendly web applications.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-gold">
+                            View Projects
+                        </a>
+
+                        <a href="resume.pdf" class="btn btn-outline-light" download>
+                            Download Resume
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat-box">
+                            <h2>10+</h2>
+                            <span>Projects</span>
+                        </div>
+
+                        <div class="stat-box">
+                            <h2>2+</h2>
+                            <span>Years Learning</span>
+                        </div>
+
+                        <div class="stat-box">
+                            <h2>8+</h2>
+                            <span>Technologies</span>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="dhanush.jpeg" alt="Dhanush" class="img-fluid rounded-circle shadow-lg profile-img">
+
+                <div class="col-lg-6 text-center">
+
+                    <div class="image-wrapper">
+
+                        <img src="dhanush.jpeg" alt="Sai Dhanush" class="profile-img img-fluid">
+
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <section id="about" class="py-5 text-center">
+    <!-- About Section -->
+    <section id="about">
+
         <div class="container">
-            <h1 class="fw-bold display-4 mb-4 text-gold">About Me</h1>
-            <p class="lead mx-auto text-silver" style="max-width: 800px;">
-                I am an aspiring <b>Full Stack Web Developer</b> currently leveraging my foundational knowledge from a
-                Diploma into my <b>2nd Year of B.Tech (CSE)</b>. My core focus is building <b>efficient, scalable, and
-                    responsive web applications</b>. I am passionate about applying <b>clean architectural
-                    principles</b> and
-                honing my skills in <b>modern web technologies</b> to deliver high-quality, practical full-stack
-                solutions.
+
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-card">
+
+                <p>
+
+                    I am a passionate Computer Science student and
+                    aspiring Full Stack Web Developer.
+
+                    I completed my
+                    <strong>Diploma in Computer Engineering (2022–2025)</strong>
+                    and am currently pursuing
+                    <strong>B.Tech in Computer Science & Engineering
+                        (2025–2028)</strong>
+                    as a <strong>Lateral Entry Student</strong>.
+
+                    I enjoy building responsive,
+                    scalable and modern web applications while
+                    continuously improving my skills in
+                    Full Stack Development,
+                    Data Structures & Algorithms,
+                    and Software Engineering.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Education Journey</h2>
+                <p>My academic path in Computer Engineering and Computer Science.</p>
+            </div>
+
+            <div class="timeline">
+
+                <!-- Diploma -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2022 - 2025
+                        </span>
+
+                        <h3>
+                            Diploma in Computer Engineering
+                        </h3>
+
+                        <p>
+
+                            Successfully completed my Diploma in
+                            Computer Engineering, gaining strong
+                            knowledge in Programming, Web Development,
+                            Database Management Systems, Computer Networks,
+                            Operating Systems, and Software Development fundamentals.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- B.Tech -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            2025 - 2028
+                        </span>
+
+                        <h3>
+                            B.Tech Computer Science & Engineering
+                            <small>(Lateral Entry)</small>
+                        </h3>
+
+                        <p>
+
+                            Currently pursuing B.Tech in Computer Science &
+                            Engineering as a Lateral Entry student while
+                            strengthening my expertise in
+                            Full Stack Development,
+                            Data Structures & Algorithms,
+                            Software Engineering,
+                            Artificial Intelligence,
+                            and Cloud Technologies.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Featured Projects</h2>
+
+                <p>
+                    Some of the projects I have built while learning
+                    Full Stack Development.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+
+                        <h3>
+                            CRUD Task Application
+                        </h3>
+
+                        <p>
+
+                            A responsive CRUD application that allows users
+                            to create, edit, update and delete tasks with
+                            database connectivity.
+
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#" class="btn btn-sm btn-gold">
+                                Live Demo
+                            </a>
+
+                            <a href="#" class="btn btn-sm btn-dark">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+
+                        <h3>
+                            Weather Application
+                        </h3>
+
+                        <p>
+
+                            A real-time weather application using API
+                            integration to display live weather,
+                            temperature and forecast information.
+
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>HTML</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#" class="btn btn-sm btn-gold">
+                                Live Demo
+                            </a>
+
+                            <a href="#" class="btn btn-sm btn-dark">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <h3>
+                            Rajeswari Industries Website
+                        </h3>
+
+                        <p>
+
+                            Developed a modern responsive company website
+                            showcasing products, services and company
+                            information with a professional UI.
+
+                        </p>
+
+                        <div class="tech-stack">
+
+                            <span>Bootstrap</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a href="#" class="btn btn-sm btn-gold">
+                                Live Demo
+                            </a>
+
+                            <a href="#" class="btn btn-sm btn-dark">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I use to build modern web applications.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar html-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar css-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar js-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bootstrap-bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar python-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar mysql-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar node-bar"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React (Basics)</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar react-bar"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Let's build something amazing together.</p>
+            </div>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-card">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <h4>Email</h4>
+
+                    <p>
+                        <a href="mailto:samathamdhanush@gmail.com">
+                            samathamdhanush@gmail.com
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fas fa-phone"></i>
+
+                    <h4>Phone</h4>
+
+                    <p>
+                        <a href="tel:+918978063452">
+                            Dhanush
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fab fa-linkedin"></i>
+
+                    <h4>LinkedIn</h4>
+
+                    <p>
+                        <a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b" target="_blank">
+                            Visit Profile
+                        </a>
+                    </p>
+
+                </div>
+
+                <div class="contact-card">
+
+                    <i class="fab fa-instagram"></i>
+
+                    <h4>Instagram</h4>
+
+                    <p>
+                        <a href="https://www.instagram.com/s.s_dhanushh/" target="_blank">
+                            @s.s_dhanushh
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container text-center">
+
+            <div class="footer-social">
+
+                <a href="https://github.com/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/s.s_dhanushh/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="mailto:samathamdhanush@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <p class="mt-4">
+
+                © 2026 S. Sai Dhanush.
+
+                All Rights Reserved.
+
             </p>
+
         </div>
-    </section>
 
-    <section id="projects" class="py-5 text-white">
-        <div class="container text-center">
-            <h1 class="fw-bold display-4 mb-5 text-teal">Projects Showcase</h1>
-            <div class="row justify-content-center g-4">
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-4 rounded shadow-lg">
-                        <i class="fas fa-tasks h2 mb-3 text-teal"></i>
-                        <h2 class="text-gold">CRUD Task Application</h2>
-                        <p class="small text-silver">Web-based application for managing records, demonstrating
-                            full-stack data flow and database operations.</p>
-                        <span class="tech-badge-project">HTML/CSS/JS</span>
-                        <span class="tech-badge-project">MySQL</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-4 rounded shadow-lg">
-                        <i class="fas fa-cloud-sun h2 mb-3 text-teal"></i>
-                        <h2 class="text-gold">Real-time Weather App</h2>
-                        <p class="small text-silver">Dynamic web app fetching and displaying current weather data using
-                            a third-party API (OpenWeatherMap).</p>
-                        <span class="tech-badge-project">JavaScript</span>
-                        <span class="tech-badge-project">API Integration</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card p-4 rounded shadow-lg">
-                        <i class="fas fa-building h2 mb-3 text-teal"></i>
-                        <h2 class="text-gold">Rajeswari Industries Website</h2>
-                        <p class="small text-silver">A fully responsive corporate website showcasing products and
-                            services with a professional, clean UI/UX.</p>
-                        <span class="tech-badge-project">HTML5</span>
-                        <span class="tech-badge-project">Bootstrap</span>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mt-4">
-                    <div class="project-card p-4 rounded shadow-lg">
-                        <i class="fas fa-users h2 mb-3 text-teal"></i>
-                        <h2 class="text-gold">Employee Management System</h2>
-                        <p class="small text-silver">A system built to manage employee records (add, edit, delete,
-                            search) using front-end logic and database connection.</p>
-                        <span class="tech-badge-project">Node.js/Backend</span>
-                        <span class="tech-badge-project">MySQL</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-5 text-center">
-        <div class="container">
-            <h1 class="fw-bold display-4 mb-4 text-gold">Core Skills</h1>
-            <p class="lead mb-4 text-silver">Technologies and core CSE principles I have mastered or am currently
-                mastering:</p>
-
-            <div class="d-flex justify-content-center flex-wrap gap-2">
-                <span class="skill-badge"><i class="fas fa-laptop-code me-2"></i>Python</span>
-                <span class="skill-badge"><i class="fas fa-laptop-code me-2"></i>C++</span>
-                <span class="skill-badge"><i class="fas fa-brain me-2"></i>DSA Fundamentals</span>
-                <span class="skill-badge"><i class="fas fa-database me-2"></i>DBMS/MySQL</span>
-
-                <span class="skill-badge"><i class="fab fa-html5 me-2"></i>HTML & CSS</span>
-                <span class="skill-badge"><i class="fab fa-js-square me-2"></i>JavaScript</span>
-                <span class="skill-badge"><i class="fab fa-bootstrap me-2"></i>Bootstrap</span>
-                <span class="skill-badge"><i class="fab fa-react me-2"></i>React.js (Basics)</span>
-                <span class="skill-badge"><i class="fab fa-node-js me-2"></i>Node.js</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5 text-white text-center">
-        <div class="container">
-            <h1 class="fw-bold display-4 mb-4 text-teal">Get In Touch</h1>
-            <p class="lead mb-5 text-silver">Let's connect and discuss future opportunities or collaborations!</p>
-
-            <ul class="list-unstyled d-flex justify-content-center flex-wrap gap-4">
-
-                <li style="animation-delay: 0.1s;"><a href="https://www.linkedin.com/in/s-sai-dhanush-84119b33b/"
-                        target="_blank" class="text-silver"><i class="fab fa-linkedin fa-2x"></i><br>LinkedIn</a></li>
-                <li style="animation-delay: 0.2s;"><a href="https://www.instagram.com/_urstruly_dhanush_/"
-                        target="_blank" class="text-silver"><i class="fab fa-instagram fa-2x"></i><br>Instagram</a></li>
-                <li style="animation-delay: 0.3s;"><a href="mailto:saidhanushhacker@gmail.com" class="text-silver"><i
-                            class="fas fa-envelope fa-2x"></i><br>Email</a></li>
-                <li style="animation-delay: 0.4s;"><a href="tel:+918978063452" class="text-silver"><i
-                            class="fas fa-phone fa-2x"></i><br>Mobile</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class="text-center py-3 text-silver">
-        <p class="mb-0">&copy; S.Sai Dhanush | All Rights Reserved 2025</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back To Top Button -->
+
+    <button id="backToTop">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed Text -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+    <!-- Custom JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
-
-
-
-
